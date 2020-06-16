@@ -3,8 +3,8 @@
 from distutils.core import setup
 
 setup(
-  name = 'mwxpy',
-  packages = ['mwxgaf','mwx','mwxpy'],
+  name = 'mwx',
+  packages = ['mwxpy'],
   version = '1.0',
   license='MIT',  
   description = 'MWXGAF\'s personal library',
