@@ -5,7 +5,7 @@ from distutils.core import setup
 setup(
   name = 'mwx',
   packages = ['mwxpy'],
-  version = '1.0',
+  version = '1.1',
   license='MIT',  
   description = 'MWXGAF\'s personal library',
   author = 'MWX',
@@ -14,7 +14,7 @@ setup(
   download_url = 'https://github.com/mwxgaf/mwxpy/archive/v1.tar.gz',
   keywords = ['python', 'mwxgaf', 'mwx'],   
   install_requires=[],
-  long_description="In the name of Allah\n\n MWXpy\n\nDocumentation available at:\n\ngithub.com/mwxgaf/mwxpy/wiki",
+  long_description="In the name of Allah\n\n MWXpy\n\nDocumentation available at:\n\nhttps://github.com/mwxgaf/mwxpy/wiki/Documentaion",
   long_description_content_type='text/markdown',
   classifiers=[
     'Development Status :: 5 - Production/Stable',
