@@ -2,6 +2,7 @@
 
 import os
 import json
+import sys
 
 
 def rwjson(path, content=None):
@@ -125,3 +126,24 @@ def browse(path):
         else:
             result['unknowns'].append({'name': i, 'type': 'unknown'})
     return result
+
+def cprint(color,text):
+    colors = {
+    'RED': '\033[1;31m',
+    'GREEN': '\033[1;32m',
+    'YELLOW': '\033[1;33m',
+    'MAGENTA': '\033[1;35m',
+    'BLUE': '\033[1;34m',
+    'CYAN': '\033[1;36m',
+    'WHITE': '\033[1;37m'
+}
+    if not isinstance(color,str):
+        raise TypeError('Color name must be string')
+    try:    
+        colors[color]    
+        sys.stdout.write(colors[color])
+        print(text)
+    except KeyError:
+        raise ValueError('No such color')
+    except Exception as e:
+        print(e)
