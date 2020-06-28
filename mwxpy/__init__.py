@@ -110,7 +110,24 @@ def browse(path):
                 ],
                 "bash": [
                     ".sh"
-                ]
+                ],
+                "spreadshit": [
+                    ".xls",
+                    ".xlsx",
+                    ".xlsm",
+                    ".xlsb",
+                    ".ods"
+                ],
+                "presentation": [
+                    ".ppt",
+                    ".pptx",
+                    ".odp"
+                ],
+                "document": [
+                    ".docx",
+                    ".doc",
+                    ".odt",
+                ],
             }
             for e in extentions:
                 for s in extentions[e]:
