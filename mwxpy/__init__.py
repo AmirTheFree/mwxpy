@@ -156,9 +156,10 @@ def cprint(color,text):
 }
     if not isinstance(color,str):
         raise TypeError('Color name must be string')
-    try:    
-        colors[color]    
-        sys.stdout.write(colors[color])
+    try:
+        color_capital = color.upper()    
+        colors[color_capital]    
+        sys.stdout.write(colors[color_capital])
         print(text)
     except KeyError:
         raise ValueError('No such color')
