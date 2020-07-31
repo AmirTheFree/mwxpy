@@ -22,12 +22,17 @@ def rwjson(path, content=None):
     fp.close()
 
 
-def browse(path):
+def browse(path,show_hidden_files = False):
     result = {'drives': [], 'folders': [],
               'files': [], 'links': [], 'unknowns': []}
     if not os.path.isdir(path):
         return ValueError('Path not found!')
     for i in sorted(os.listdir(path), key=str.lower):
+        if i.startswith('.'):
+            if show_hidden_files:
+                pass
+            else:
+                continue
         if os.path.ismount(os.path.join(path, i)):
             result['drives'].append({'name': i, 'type': 'drive'})
         elif os.path.islink(os.path.join(path, i)):
