@@ -15,7 +15,7 @@ _**In the name of Allah**_
 
 #### Documentation
 
-Click [here](https://github.com/mwxgaf/mwxpy/wiki/Documentaion) to view documentation
+Click [here](https://github.com/mwxgaf/mwxpy/wiki/Documentation) to view documentation
 
 #### Other tips
 
