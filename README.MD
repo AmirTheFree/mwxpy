@@ -6,12 +6,19 @@ _**In the name of Allah**_
 
 #### Installtion
 
-`$ pip install mwx`
+```shell
+$ pip install mwx
+```
 
 #### Usage Example
 
-`import mwx`
-`mwx.rwjson('folder/file.json',{'name':'Amirreza','age':16})`
+```python
+import mwx
+```
+
+```python
+mwx.rwjson('folder/file.json',{'name':'Amirreza','age':16})
+```
 
 #### Documentation
 

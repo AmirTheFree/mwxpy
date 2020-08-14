@@ -1,11 +1,38 @@
 # In the name of Allah
 
+__doc__ = 'MWX Python Utils'
+
 import os
 import json
 import sys
 
+def rwfile(path, content=None):
+    '''
+    path:str | content:any=None(optional)
+
+    Returns the data of file that located in path if content=None
+
+    Writes content to the file that located in path if content is not None
+    '''
+    if not content:
+        if not os.path.isfile(path):
+            raise FileNotFoundError
+        fp = open(path,'r')
+        data = fp.read()
+        fp.close()
+        return data
+    fp = open(path,'w')
+    fp.write(content)
+    fp.close()
 
 def rwjson(path, content=None):
+    '''
+    path:str | content:dict=None(optional)
+
+    Returns a dict including data of JSON file that located in path if content=None
+
+    Writes content to the JSON file located in path if content is a dict.
+    '''
     if not path.endswith('.json'):
         raise ValueError('Only JSON files allowed')
     if not content:
@@ -23,6 +50,13 @@ def rwjson(path, content=None):
 
 
 def browse(path,show_hidden_files = False):
+    '''
+    path:str | show_hidden_files:bool=False(optional)
+
+    Returns a dict including information of items that located in path
+
+    It will aslo include Unix hidden files (starting with .) if show_hidden_files is True
+    '''
     result = {'drives': [], 'folders': [],
               'files': [], 'links': [], 'unknowns': []}
     if not os.path.isdir(path):
@@ -150,6 +184,11 @@ def browse(path,show_hidden_files = False):
     return result
 
 def cprint(color,text):
+    '''
+    color:str | text:any
+
+    Prints the text painted in color in terminal, command line, ...
+    '''
     colors = {
     'RED': '\033[1;31m',
     'GREEN': '\033[1;32m',
@@ -162,8 +201,8 @@ def cprint(color,text):
     if not isinstance(color,str):
         raise TypeError('Color name must be string')
     try:
-        color_capital = color.upper()    
-        colors[color_capital]    
+        color_capital = color.upper()
+        colors[color_capital]
         sys.stdout.write(colors[color_capital])
         print(text)
     except KeyError:
