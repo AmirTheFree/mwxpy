@@ -14,7 +14,7 @@ def rwfile(path, content=None):
 
     Writes content to the file that located in path if content is not None
     '''
-    if not content:
+    if content == None:
         if not os.path.isfile(path):
             raise FileNotFoundError
         fp = open(path,'r')
@@ -22,7 +22,7 @@ def rwfile(path, content=None):
         fp.close()
         return data
     fp = open(path,'w')
-    fp.write(content)
+    fp.write(str(content))
     fp.close()
 
 def rwjson(path, content=None):
