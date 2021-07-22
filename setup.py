@@ -4,8 +4,8 @@ from distutils.core import setup
 
 setup(
   name = 'mwx',
-  packages = ['mwxpy'],
-  version = '1.5.1',
+  packages = ['mwx'],
+  version = '1.5.2',
   license='MIT',
   description = 'MWXGAF\'s personal library',
   author = 'MWX',
