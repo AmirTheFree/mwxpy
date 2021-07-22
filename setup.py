@@ -5,9 +5,9 @@ from distutils.core import setup
 setup(
   name = 'mwx',
   packages = ['mwx'],
-  version = '1.5.2',
+  version = '1.6',
   license='MIT',
-  description = 'MWXGAF\'s personal library',
+  description = 'MWXGAF\'s tiny Python tools',
   author = 'MWX',
   author_email = 'mwxgaf@yahoo.com',
   url = 'http://mwxgaf.ir',
