@@ -1,6 +1,6 @@
 # MWXpy
 
-## MWX's personal Python libarary
+## My tiny Python tools
 
 _**In the name of Allah**_
 
