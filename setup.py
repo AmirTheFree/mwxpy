@@ -11,10 +11,10 @@ setup(
   author = 'MWX',
   author_email = 'mwxgaf@yahoo.com',
   url = 'http://mwxgaf.ir',
-  download_url = 'https://github.com/mwxgaf/mwxpy/archive/v1.5.1.tar.gz',
+  download_url = 'https://github.com/mwxgaf/mwxpy/archive/v1.5.2.tar.gz',
   keywords = ['python', 'mwxgaf', 'mwx'],
   install_requires=[],
-  long_description="In the name of Allah\n\nMWXpy\n\nDocumentation available at:\n\nhttps://github.com/mwxgaf/mwxpy/wiki/Documentation",
+  long_description="In the name of Allah\n\nMWXpy\n\nDocumentation available at:\n\nhttps://github.com/mwxgaf/mwxpy",
   long_description_content_type='text/markdown',
   classifiers=[
     'Development Status :: 5 - Production/Stable',
