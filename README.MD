@@ -27,7 +27,7 @@ NOTE: `color` is case insensitive so `red`,`RED`,`Red`,`ReD`,`REd`,`rED`,`reD` a
 **Example:**
 
 ```python
-from mwxpy import cprint
+from mwx import cprint
 cprint('green','In the name of Allah')
 ```
 
@@ -52,7 +52,7 @@ Writes `content`(If it is a `dict`) into the targeted JSON file.
 **Example:**
 
 ```python
-import mwxpy
+import mwx
 data = {'name':'Amirreza','age':16}
 mwxpy.rwjson('test.json',data)
 ```
@@ -60,7 +60,7 @@ mwxpy.rwjson('test.json',data)
 It will write `data` to `test.json`
 
 ```python
-from mwxpy import rwjson
+from mwx import rwjson
 data = rwjson('test.json')
 print(data)
 ```
@@ -91,7 +91,7 @@ Writes `content`(If it is not `None`) into the targeted file.
 **Example:**
 
 ```python
-import mwxpy
+import mwx
 data = 'Hey this is some thing! :)'
 mwxpy.rwfile('test.txt',data)
 ```
@@ -99,7 +99,7 @@ mwxpy.rwfile('test.txt',data)
 It will write `data` to `test.txt`
 
 ```python
-from mwxpy import rwfile
+from mwx import rwfile
 data = rwfile('test.txt')
 print(data)
 ```
@@ -219,11 +219,11 @@ Other types: `file`(for unsupported file types) `folder`(for folders) `drive`(fo
 **Example:**
 
 ```python
-from mwxpy import browse
+from mwx import browse
 print(browse('folder1/folder2'))
 ```
 ```python
-import mwxpy
+import mwx
 content = mwxpy.browse('/tmp/sub/test',True)
 ```
 
