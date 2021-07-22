@@ -1,6 +1,10 @@
 _**In the name of Allah**_
 
-# MWXpy Documentation
+# MWXpy
+
+### My tiny Python library
+
+## Documentation
 
 Also there is a video for Persian users:
 
@@ -12,7 +16,7 @@ Also there is a video for Persian users:
 
 `pip install mwx`
 
-## Functions
+### Functions
 
 _function_ **cprint ( color:_str_ , text:_anything_)**
 
