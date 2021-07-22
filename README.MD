@@ -4,6 +4,8 @@ _**In the name of Allah**_
 
 ### My tiny Python library
 
+[![PyPI version](https://badge.fury.io/py/mwx.svg)](https://badge.fury.io/py/mwx)
+
 ## Documentation
 
 Also there is a video for Persian users:
