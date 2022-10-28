@@ -4,7 +4,7 @@ _**In the name of Allah**_
 
 ### My tiny Python library
 
-[![PyPI version](https://img.shields.io/badge/PyPI-v1.6-green?style=for-the-badge&logo=python&logoColor=yellow&labelColor=blue)](https://pypi.org/project/mwx/)
+[![PyPI version](https://img.shields.io/pypi/v/mwx?label=PyPI&logo=python&logoColor=yellow&style=flat-square)](https://pypi.org/project/mwx/)
 
 ## Documentation
 
