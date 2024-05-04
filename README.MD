@@ -1,5 +1,3 @@
-_**In the name of Allah**_
-
 # MWXpy
 
 ### My tiny Python library
